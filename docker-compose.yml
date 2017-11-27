@@ -3,8 +3,8 @@ services:
   jekyll:
     image: jekyll/jekyll
     volumes:
-      - ./workspace:/home/jekyll
+      - ./workspace:/srv/jekyll
     working_dir: /srv/jekyll
-    command: jekyll serve -s /home/jekyll --watch --incremental
+    command: jekyll serve -s /srv/jekyll --watch --incremental
     ports:
       - "4000:4000"
